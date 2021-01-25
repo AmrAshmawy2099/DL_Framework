@@ -1,5 +1,6 @@
 import numpy as np
-
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # foundation classes
 ###################################################
@@ -408,3 +409,7 @@ list1=model.train(target,data,4,.1)
 print("###########################")
 print(list1[1].get_parameters())
 """
+plt.plot(epoch_no, list1, 'r--')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.show();
